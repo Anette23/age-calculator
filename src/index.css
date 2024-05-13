@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+main {
+  min-height: 100svh;
+  font-family: "Poppins", sans-serif;
+  background-color: hsl(0, 0%, 86%);
+  display: grid;
+  place-items: center;
+}
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+p {
+  max-width: 75ch;
+  text-wrap: pretty;
+}
+html {
+  hanging-punctuation: first last;
+}
+
+.card {
+  border-radius: 10px 10px 50px 10px;
+  width: 90%;
+  padding:clamp(1.5rem, 3vw, 3.5rem)
+}
+
+label {
+  font-size: .85rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: hsl(0, 1%, 44%);
+  margin-bottom: 0.5rem;
+}
+
+input {
+  width: 100%;
+  max-width: 10rem; 
+  color: hsl(0, 1%, 44%);
+  font-weight: 700;
+  font-size: clamp(1.1rem, 3vw, 2rem);
+  border: 1px solid hsl(0, 0%, 86%);
+  border-radius: 0.5rem;
+  padding: 1rem 1.3rem;  
+}
+
+button {
+  max-width: clamp(60px,10vw,90px);
+}
+
+.active {
+  color: hsl(0, 0%, 8%);
+}
+
+.stat {
+  font-size: clamp(3rem, 12vw, 6.5rem);
+}
+
